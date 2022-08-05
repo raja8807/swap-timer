@@ -1,0 +1,107 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.box{
+    width: 400px;
+    /* height: 300px; */
+    background-color:blueviolet;
+    border-radius: 20px;
+
+}
+
+.timerWrapper{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.timerSection{
+    background-color:crimson;
+    padding: 10px;
+    border-radius: 20px;
+
+    /* height: 150px; */
+}
+
+.timer{
+    color: white;
+    font-size: 60px;
+}
+
+hr{height: 100px;}
+
+.swapArea{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn{
+    width: 80px;
+    height: 40px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 20px;
+}
+
+.btn:active{
+    transform: scale(0.95);
+    /* background-color: green; */
+}
+
+.display{
+    width: 20px;
+    height: 20px;
+    background-color: rgb(12, 230, 34);
+    border-radius: 50%;
+    border: 2px solid white;
+    box-shadow: 0px 0px 10px 10px rgba(12, 230, 34, 0.5);
+}
+
+.controlSection{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+}
+
+#endBG{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#endMsgBox{
+    width: 400px;
+    height: 200px;
+    background-color: aqua;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 50px;
+}
+
+#endBtn{
+    width: 100px;
+
+}

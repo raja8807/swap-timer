@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swap timer</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <section class="box">
+            <section class="timerSection">
+                <section class="timerWrapper">
+                    <div id="timer-A" class="timer">
+                        <span class="min" id="min-A">
+                            00
+                        </span>:
+                        <span class="sec" id="sec-A">
+                            00
+                        </span>
+                    </div>
+                    <hr>
+                    <div id="timer-B" class="timer">
+                        <span class="min" id="min-B">
+                            00
+                        </span>:
+                        <span class="sec" id="sec-B">
+                            00
+                        </span>
+                    </div>
+                </section>
+
+                <section class="swapArea">
+                    <div class="display" id="disA"></div>
+                    <button id="swapBtn" class="btn">SWAP</button>
+                    <div class="display" id="disB"></div>
+                </section>
+            </section>
+
+
+
+            <section class="controlSection">
+                <select name="timeSelect" id="timeSelect" class="btn">
+                    <option value="0">none</option>
+                    <option value="5">5 Min</option>
+                    <option value="15">15 Min</option>
+                    <option value="30">30 Min</option>
+                </select>
+
+                <button id="startBtn" class="btn">START</button>
+                <button id="resetBtn" class="btn">Reset</button>
+            </section>
+        </section>
+    </div>
+
+    <div id="endBG">
+        <div id="endMsgBox">
+            <p>Time Out..!</p>
+            <button id="endBtn" class="btn">close</button>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+    <!-- <script src="temp.js"></script> -->
+</body>
+
+</html>
